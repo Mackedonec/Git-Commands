@@ -16,18 +16,18 @@
 
     <h1>Git Commands</h1>
 
-    <div class="cont-ball">
-      <span class="ball"></span>
-      <span class="ball"></span>
-      <span class="ball"></span>
-      <span class="ball"></span>
+    <div class="wrap-line">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
     </div>
   </div>
   <div class="wrapper">
     <div>
       <h2>Регистрация в GIT</h2>
-      <div class="cont-ball">
-        <span class="ball"></span>
+      <div class="wrap-line">
+        <span class="line"></span>
       </div>
       <div>
         <b>git --version</b><i>Проверка версии GIT</i>
@@ -47,9 +47,9 @@
       </div>
     </div>
     <div>
-      <h2>Работа в Гите</h2>
-      <div class="cont-ball">
-        <span class="ball"></span>
+      <h2>Работа в GIT</h2>
+      <div class="wrap-line">
+        <span class="line"></span>
       </div>
       <div>
         <b>git init</b><i>Создание нового репозитория</i>
@@ -108,25 +108,33 @@
           push</i>
       </div>
       <div>
-        <b>git restore filename</b><i>Востановить конкретный файл из последнего коммита</i>
+        <b>git restore Имя файла</b><i>Востановить конкретный файл из последнего коммита</i>
       </div>
       <div>
         <b>git restore .</b><i>Востановить все файлы из последнего коммита</i>
       </div>
       <div>
-        <b>git log</b><i>Просмотр истории изменений</i>
+        <b>git log</b><i>Просмотр истории изменений. Если список очень большой, для выхода нажать Q</i>
       </div>
       <div>
-        <b>git log --pretty</b><i></i>
+        <b>git log --pretty=format:"%h - %an, %ar - %s"</b><i>Изменение формата вывода коммитов. %h – показывает
+          короткий код коммита %an – автор коммита %ar – время, когда был сделан коммит %s – комментарий коммита</i>
       </div>
       <div>
-        <b>git checkout hash-commit </b> <i>переход на коммит</i>
+        <b>git log --since=2.weeks</b><i>Команда с данным параметром выводит все коммиты за последние 2 недели</i>
       </div>
       <div>
-        <b>git checkout branch-name </b><i>переход на ветку по имени</i>
+        <b>$ git log -p -n</b><i>–p – показывает diff (дельту, разницу), внесенную каждым коммитом. –n – ограничит вывод
+          n последними записями.</i>
       </div>
       <div>
-        <b>git checkout -b new-branch-name </b><i>создаем ветку и переходим на нее</i>
+        <b>git checkout hash-commit </b> <i>Переход на коммит</i>
+      </div>
+      <div>
+        <b>git checkout branch-name </b><i>Переход на ветку по имени</i>
+      </div>
+      <div>
+        <b>git checkout -b new-branch-name </b><i>Создаем ветку и переходим на нее</i>
       </div>
       <div>
         <b>git branch</b><i></i>
@@ -157,6 +165,9 @@
       </div>
       <div>
         <b>git pull</b><i>Скачивание с удаленного сервера</i>
+      </div>
+      <div>
+        <b>git help lof</b><i>Открывает FAQ (работает оффлайн)</i>
       </div>
     </div>
 
