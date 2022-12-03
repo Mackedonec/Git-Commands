@@ -12,20 +12,14 @@ body {
   flex-wrap: wrap;
 }
 
-h1,
-h2 {
-  margin: 0 auto;
-  padding: 10px;
-  text-transform: uppercase;
-}
+
 
 h1,
 h2 {
   margin: 0 auto;
   padding: 10px;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 600;
+
 }
 
 b {
@@ -44,6 +38,7 @@ i {
 
 
 .head {
+  text-align: center;
   width: 1480px;
   background-color: #0c0c0ccc;
   color: #f0ffff;
@@ -51,7 +46,7 @@ i {
   align-items: center;
   margin: 0 auto;
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -74,7 +69,7 @@ i {
 
 .ball {
   height: 5px;
-  width: 280px;
+  min-width: 25%;
   background-color: #ff0000;
   animation: rotate 5s linear infinite;
 }
