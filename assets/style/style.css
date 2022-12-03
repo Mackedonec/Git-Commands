@@ -5,9 +5,11 @@
 body {
   width: 100vh;
   height: auto;
-  background-color: #f9ffff;
+  background: radial-gradient(circle, #222121 0%, #8b9cd3 100%);
   padding: 20px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -15,45 +17,43 @@ h2 {
   margin: 0 auto;
   padding: 10px;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
 b {
   padding-right: 50px;
   font-size: 1.2rem;
   font-weight: 400;
+  color: #f0d0d0;
 }
 
 i {
   font-size: 1.2rem;
   font-weight: 600;
-  color: red;
   text-decoration: underline;
+  color: #fffefb;
 }
 
 
 .head {
   width: 1480px;
-  background-color: #696bee54;
-  display: flex;
+  background-color: #0c0c0ccc;
+  color: #f0ffff;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .wrapper {
   width: 1480px;
-  background-color: #24c3f333;
-  display: flex;
+  background-color: #3d3d2033;
   align-content: space-around;
-  flex-wrap: wrap;
   flex-direction: column;
   margin: 0 auto;
   padding: 20px;
 }
-
 
 
 .cont-ball {
