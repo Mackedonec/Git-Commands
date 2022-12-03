@@ -51,11 +51,8 @@ i {
   align-items: center;
   margin: 0 auto;
   padding: 20px;
-<<<<<<< HEAD
   font-size: 1.5rem;
   font-weight: 600;
-=======
->>>>>>> 2cef985fe3f9c9cb820ce5a1ccde50d904e0c160
 }
 
 .wrapper {
@@ -67,10 +64,6 @@ i {
   padding: 20px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2cef985fe3f9c9cb820ce5a1ccde50d904e0c160
 
 .cont-ball {
   display: flex;
