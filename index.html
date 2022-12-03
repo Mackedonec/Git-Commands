@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style/normalize.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>Git Commands</title>
+</head>
+
+<body>
+
+  <div class="head">
+
+    <h1>Git Commands</h1>
+
+    <div class="cont-ball">
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div>
+      <h2>Регистрация в Гите</h2>
+      <div>
+        <b>- git --version</b><i>Проверка версии GIT</i>
+      </div>
+      <div>
+        <b>- git config</b><i>Просматривает и
+          устанавливет параметры</i>
+      </div>
+      <div>
+        <b>- git config --global user.name "Имя"</b><i>Задать ваше имя</i>
+      </div>
+      <div>
+        <b>- git config --global user.email Ваша @ почта</b><i>Задать вашу почту</i>
+      </div>
+      <div>
+        <b>- git config --list</b><i>Получение списка всех настроек</i>
+      </div>
+    </div>
+    <div>
+      <h2>Работа в Гите</h2>
+      <div>
+        <b>- git init</b><i>Создание нового репозитория</i>
+      </div>
+      <div>
+        <b>- git status</b><i>Отображение текущего статуса файлов</i>
+      </div>
+      <div>
+        <b>- git status --untracked-files=all</b><i>Отображение текущего статуса файлов, включая файлы в папках</i>
+      </div>
+      <div>
+        <b>- git add Имя файла</b><i> Подготовка файлов перед коммитом. Добавляется указанный файл</i>
+      </div>
+      <div>
+        <b>- git add .</b><i>Подготовка файлов перед коммитом. Добавляются все файлы проекта</i>
+      </div>
+      <div>
+        <b>- git rm --cached Имя файла</b><i>Отменяет подготовку файла перед коммитом, оставив его при этом в рабочем
+          каталоге</i>
+      </div>
+      <div>
+        <b>- git config --global core.autocrlf false</b><i>Решает ошибку "warning: CRLF will be replaced by LF."</i>
+      </div>
+      <div>
+        <b>- git commit</b><i>Создание коммита</i>
+      </div>
+      <div>
+        <b>- git commit -m "комментарий"</b><i>Создание коммита. Позволяет задать комментарий к коммиту</i>
+      </div>
+      <div>
+        <b>- git commit -a -m "комментарий"</b><i>Создание коммита. Индексирует каждый уже отслеживаемый на момент
+          коммита
+          файл,
+          позволяя нам обойтись без git add</i>
+      </div>
+      <div>
+        <b>- git commit --amend --no-edit</b><i>Обновляем коммит, текст коммита не меняется</i>
+      </div>
+      <div>
+        <b>- git commit --amend -m "Текст"</b><i>Обновляем коммит с изменением текста</i>
+      </div>
+      <div>
+        <b>- git add . && git commit -m "updated 3 html"</b><i></i>
+      </div>
+      <div>
+        <b>- git reset --soft HEAD^</b><i>Команда отменит последний коммит (но не изменения, они сохранятся). Все это
+          работает, если вы не опубликовали свои изменения</i>
+      </div>
+      <div>
+        <b>- git reset --hard HEAD^ </b><i>Последний коммит можно полностью удалить. Все это работает, если вы не
+          опубликовали свои изменения</i>
+      </div>
+      <div>
+        <b>- git revert commit-sha1</b><i>Отменяет опубликованый коммит. Потом опубликовать его командой git push</i>
+      </div>
+      <div>
+        <b>- git restore filename</b><i></i>
+      </div>
+      <div>
+        <b>- git restore .</b><i></i>
+      </div>
+      <div>
+        <b>- git log</b><i>Просмотр истории изменений</i>
+      </div>
+      <div>
+        <b>- git log --pretty</b><i></i>
+      </div>
+      <div>
+        <b>- git checkout hash-commit </b> <i>переход на коммит</i>
+      </div>
+      <div>
+        <b>- git checkout branch-name </b><i>переход на ветку по имени</i>
+      </div>
+      <div>
+        <b>- git checkout -b new-branch-name </b><i>создаем ветку и переходим на нее</i>
+      </div>
+      <div>
+        <b>- git branch</b><i></i>
+      </div>
+      <div>
+        <b>- git branch -v</b><i></i>
+      </div>
+      <div>
+        <b>- git merge branch-name</b><i></i>
+      </div>
+      <div>
+        <b>- git remote</b><i></i>
+      </div>
+      <div>
+        <b>- git remote -v</b><i></i>
+      </div>
+      <div>
+        <b>- git remote rm origin</b><i></i>
+      </div>
+      <div>
+        <b>- git push -u origin master</b><i></i>
+      </div>
+      <div>
+        <b>- git push</b><i>Отправка на удаленнній сервер</i>
+      </div>
+      <div>
+        <b>- git clone</b><i>Копирование с удаленного сервера</i>
+      </div>
+      <div>
+        <b>- git pull</b><i>Скачивание с удаленного сервера</i>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
